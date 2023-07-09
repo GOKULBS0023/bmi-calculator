@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Body Mass Index (BMI) Calculator</h2>
+        <label for="height">Your height (cm)</label>
+        <input type="number" name="height" id="height" required>
+        <label for="weight">Your weight (kg)</label>
+        <input type="number" name="weight" id="weight" required>
+        <button id="btn" class="btn">Compute BMI</button>
+        <p class="weight-condition">
+            Weight Condition:
+            <span class="condition"></span>
+        </p>
+        <input name="computed-bmi" id="bmi" disabled>
+        <p class="invalid">Kindly enter the correct  values.</p>
+    </div>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- JS Link -->
+    <script src="index.js"></script>
+</body>
+</html>
